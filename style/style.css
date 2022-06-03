@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 65px;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 400;
+  color: hsl(0deg, 36%, 70%);
+  font-size: 16px;
+  background: url(../images/bg-pattern-desktop.svg) no-repeat left;
+  background-size: cover;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .hero-img-mobile {
+    display: flex;
+    width: 100%;
+  }
+  .hero-img-mobile img {
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-img-desktop {
+    display: none;
+  }
+}
+
+.main--container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  width: 60%;
+}
+@media screen and (max-width: 500px) {
+  .left-section {
+    width: 100%;
+    padding: 0;
+  }
+}
+.left-section header {
+  margin-bottom: 5rem;
+  width: 60%;
+}
+@media screen and (max-width: 500px) {
+  .left-section header {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .left-section header img {
+    margin: 2rem;
+  }
+}
+.left-section .text-section {
+  width: 60%;
+}
+@media screen and (max-width: 500px) {
+  .left-section .text-section {
+    width: 100%;
+    padding: 2rem 10%;
+    text-align: center;
+  }
+}
+.left-section .text-section h1 {
+  color: black;
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1em;
+}
+.left-section .text-section h1 span {
+  font-weight: 400;
+  color: hsl(0deg, 6%, 24%);
+}
+.left-section .text-section p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+form {
+  position: relative;
+}
+form input {
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid hsl(0deg, 36%, 70%);
+  border-radius: 2rem;
+}
+form button {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  background-image: linear-gradient(to right, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border: none;
+  padding: 0.8rem 1.6rem;
+  right: -2%;
+  top: 0;
+  border-radius: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+form button:hover {
+  box-shadow: 5px 10px 10px rgba(27, 1, 1, 0.575);
+  background-image: linear-gradient(to bottom, hsl(0deg, 74%, 74%), hsl(0deg, 100%, 98%));
+}
+
+.error-msg span {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin: 0.5rem 1rem;
+  color: hsl(0deg, 93%, 68%);
+}
+
+.right-section {
+  width: 40%;
+}
+.right-section img {
+  width: 100%;
+}
+
+.error {
+  border: 2px solid hsl(0deg, 93%, 68%);
+}/*# sourceMappingURL=style.css.map */

@@ -126,7 +126,7 @@ form button {
   background-image: linear-gradient(to right, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
   border: none;
   padding: 0.8rem 1.6rem;
-  right: -2%;
+  right: 0;
   top: 0;
   border-radius: 2rem;
   transition: 0.3s;
@@ -154,4 +154,7 @@ form button:hover {
 
 .error {
   border: 2px solid hsl(0deg, 93%, 68%);
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 75% center;
 }/*# sourceMappingURL=style.css.map */

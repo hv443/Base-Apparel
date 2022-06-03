@@ -128,7 +128,7 @@ form {
     background-image: linear-gradient(to right, $g3, $g4);
     border: none;
     padding: 0.8rem 1.6rem;
-    right: -2%;
+    right: 0;
     top: 0;
     border-radius: 2rem;
     transition: 0.3s;
@@ -161,4 +161,7 @@ form {
 
 .error {
   border: 2px solid $Soft-Red;
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 75% center;
 }
